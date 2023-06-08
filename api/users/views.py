@@ -6,6 +6,7 @@ from flask.views import MethodView
 
 class UsersAPI(MethodView):
     def get(self, user_id):
+        print(user_id)
         return jsonify({'user_id': user_id})
 
     def post(self):
